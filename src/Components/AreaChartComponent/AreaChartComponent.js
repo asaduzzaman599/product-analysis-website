@@ -7,10 +7,11 @@ const AreaChartComponent = ({ data }) => {
       <h3 className='text-2xl font-semibold mb-4 text-blue-600'> Investment vs Revenue </h3>
 
 
-      <div width="100%" height="100%">
+      <div width="100%" height="100%" >
         <AreaChart
-          width={500}
-          height={300}
+        className="mx-auto"
+          width={300}
+          height={200}
           data={data}
           margin={{
             top: 10,

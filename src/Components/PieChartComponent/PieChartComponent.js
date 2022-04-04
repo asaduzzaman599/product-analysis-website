@@ -6,7 +6,7 @@ const PieChartComponent = ({data}) => {
       <div>
         <h3 className='text-2xl font-semibold mb-4 text-blue-600'> Investment vs Revenue </h3>
         <div width="100%" height="100%">
-        <PieChart width={500} height={300}>
+        <PieChart width={300} height={200} className="mx-auto">
             
           <Tooltip />
           <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />

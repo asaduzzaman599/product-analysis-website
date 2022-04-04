@@ -1,25 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { MenuAlt1Icon,XIcon } from '@heroicons/react/solid'
 const Header = () => {
+
+    const [isOpen, setIsOpen] = useState(false)
+
     const navLinkItem = [
-        {name:'Home',link:'/home'},
-        {name:'Reviews',link:'/reviews'},
-        {name:'Dashboard',link:'/dashboard'},
-        {name:'Blogs',link:'/blogs'},
-        {name:'Contact',link:'/contact'},
-]
+        { name: 'Home', link: '/home' },
+        { name: 'Reviews', link: '/reviews' },
+        { name: 'Dashboard', link: '/dashboard' },
+        { name: 'Blogs', link: '/blogs' },
+        { name: 'Contact', link: '/contact' },
+    ]
     return (
-        <div className='p-6 bg-red-100'>
-           <ul className='flex justify-center'> 
-           {
-                navLinkItem.map(navlink=> <li key={navlink.name}>
-                    <NavLink to={navlink.link} className={'font-semibold text-xl px-6 py-2 mx-4'} style={ ({ isActive }) =>
-                isActive ? {color:"#630000",borderBottom:"2px solid #630000"} : {color:"#072227",borderBottom:"2px solid rgba(0,0,0,.2)"
-            }} key={navlink.name}>{navlink.name}</NavLink>
-                </li>)
-            }
-           </ul>
+        <div className='p-6 bg-blue-200 '>
+            <div className='sm:hidden' onClick={()=>setIsOpen(!isOpen)}>
+                {isOpen || <MenuAlt1Icon className="h-5 w-5 text-slate-800" />}
+                {isOpen && <XIcon className="h-5 w-5 text-slate-800" />}
+            </div>
+            <ul className={`sm:flex justify-center w-full absolute left-0  bg-blue-200 duration-700 sm:static ${isOpen?"top-10":"top-[-400px]"}`}>
+                {
+                    navLinkItem.map(navlink => <li key={navlink.name} className="my-4">
+                        <NavLink to={navlink.link} className={'font-semibold text-xl px-6 py-2  mx-4'} style={({ isActive }) =>
+                            isActive ? { color: "#630000", borderBottom: "2px solid #630000" } : {
+                                color: "#072227", borderBottom: "2px solid rgba(0,0,0,.2)"
+                            }} key={navlink.name}>{navlink.name}</NavLink>
+                    </li>)
+                }
+            </ul>
         </div>
     );
 };
