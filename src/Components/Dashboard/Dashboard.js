@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AreaChartComponent from '../AreaChartComponent/AreaChartComponent';
+import BarChartComponent from '../BarChartComponent/BarChartComponent';
 import LineChartComponent from '../LineChartComponent/LineChartComponent';
 
 const Dashboard = () => {
@@ -16,6 +17,7 @@ const Dashboard = () => {
             <div>
                  <LineChartComponent data={chartData}></LineChartComponent>
                  <AreaChartComponent data={chartData}></AreaChartComponent>
+                 <BarChartComponent data={chartData}></BarChartComponent>
 
             </div>
         </div>

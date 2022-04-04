@@ -19,7 +19,6 @@ const AreaChartComponent = ({data}) => {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="sell" stackId="1" stroke="#8884d8" fill="#8884d8" />
           <Area type="monotone" dataKey="investment" stackId="1" stroke="#8884d8" fill="#8884d8" />
           <Area type="monotone" dataKey="revenue" stackId="1" stroke="#B6FFCE" fill="#B6FFCE" />
         </AreaChart>
