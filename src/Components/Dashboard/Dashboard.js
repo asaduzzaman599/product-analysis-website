@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AreaChartComponent from '../AreaChartComponent/AreaChartComponent';
 import BarChartComponent from '../BarChartComponent/BarChartComponent';
 import LineChartComponent from '../LineChartComponent/LineChartComponent';
+import PieChartComponent from '../PieChartComponent/PieChartComponent';
 
 const Dashboard = () => {
     const [chartData,setChartData] = useState([]);
@@ -18,6 +19,7 @@ const Dashboard = () => {
                  <LineChartComponent data={chartData}></LineChartComponent>
                  <AreaChartComponent data={chartData}></AreaChartComponent>
                  <BarChartComponent data={chartData}></BarChartComponent>
+                 <PieChartComponent data={chartData}></PieChartComponent>
 
             </div>
         </div>
