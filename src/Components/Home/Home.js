@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <div className='order-1 my-20'>
                     <h1 className='text-5xl font-medium text-cyan-900'>We are commited to Provide Best Sunglass to Our Customer! </h1>
-                    <p className='text-gray-500 text-2xl my-4'>Out main priority is customers comfort, safety and their trust.</p>
+                    <p className='text-gray-500 text-2xl my-8'>Our main priority is customers comfort, safety and their trust.</p>
                     <button className='py-4 px-8 rounded font-medium  text-blue-900 bg-blue-200'>Live Demo</button>
                 </div>
                

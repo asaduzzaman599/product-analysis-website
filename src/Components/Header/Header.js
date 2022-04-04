@@ -21,7 +21,7 @@ const Header = () => {
             <div className='w-full text-right sm:text-left'>
                 <h3 className='sm:text-3xl font-bold text-cyan-800'>Buy Glass</h3>
             </div>
-            <ul className={`sm:flex justify-center w-full  absolute left-0  bg-blue-200 duration-700 sm:static ${isOpen?"top-14":"top-[-400px]"}`}>
+            <ul className={`sm:flex justify-center w-full  absolute left-0 z-10  bg-blue-200 duration-700 sm:static ${isOpen?"top-14":"top-[-400px]"}`}>
                 {
                     navLinkItem.map(navlink => <li key={navlink.name} className="my-4">
                         <NavLink to={navlink.link} className={'font-semibold text-xl px-6 py-2  mx-4'} style={({ isActive }) =>
