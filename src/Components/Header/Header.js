@@ -19,7 +19,7 @@ const Header = () => {
                 {isOpen && <XIcon className="h-5 w-5 text-slate-800" />}
             </div>
             <div className='w-full text-right sm:text-left'>
-                <h3 className='sm:text-3xl font-bold text-cyan-800'>Buy Glass</h3>
+                <h3 className='sm:text-3xl font-bold text-cyan-800'>SunGlass Museum</h3>
             </div>
             <ul className={`sm:flex justify-center w-full  absolute left-0 z-10  bg-blue-200 duration-700 sm:static ${isOpen?"top-14":"top-[-400px]"}`}>
                 {
