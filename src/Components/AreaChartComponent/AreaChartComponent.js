@@ -11,7 +11,7 @@ const AreaChartComponent = ({ data }) => {
         <AreaChart
         className="mx-auto"
           width={300}
-          height={200}
+          height={300}
           data={data}
           margin={{
             top: 10,

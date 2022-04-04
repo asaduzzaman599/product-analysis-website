@@ -9,7 +9,7 @@ const LineChartComponent = ({ data }) => {
       <div width="100%" height="100%" >
         <LineChart
           width={300}
-          height={200}
+          height={300}
           className="mx-auto"
           data={data}
           margin={{
