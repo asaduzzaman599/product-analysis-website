@@ -1,10 +1,12 @@
 import React from 'react';
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-const LineChartComponent = ({data}) => {
-    console.log(data)
-    return (
-        <div width="100%" height="100%">
+const LineChartComponent = ({ data }) => {
+  console.log(data)
+  return (
+    <div>
+      <h3 className='text-2xl font-semibold mb-4 text-blue-600'> MONTH WISE SEll</h3>
+      <div width="100%" height="100%">
         <LineChart
           width={500}
           height={300}
@@ -22,10 +24,11 @@ const LineChartComponent = ({data}) => {
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="sell" stroke="#39AEA9" activeDot={{ r: 8 }} />
-         {/*  <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
+          {/*  <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
         </LineChart>
       </div>
-    );
+    </div>
+  );
 };
 
 export default LineChartComponent;

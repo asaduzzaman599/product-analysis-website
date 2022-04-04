@@ -10,7 +10,7 @@ const Header = () => {
         {name:'Contact',link:'/contact'},
 ]
     return (
-        <div className='m-4'>
+        <div className='p-6 bg-red-100'>
            <ul className='flex justify-center'> 
            {
                 navLinkItem.map(navlink=> <li key={navlink.name}>

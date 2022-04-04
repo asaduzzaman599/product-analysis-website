@@ -1,12 +1,16 @@
 import React from 'react';
 import { Area, AreaChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts';
 
-const AreaChartComponent = ({data}) => {
-    return (
-        <div width="100%" height="100%">
+const AreaChartComponent = ({ data }) => {
+  return (
+    <div>
+      <h3 className='text-2xl font-semibold mb-4 text-blue-600'> Investment vs Revenue </h3>
+
+
+      <div width="100%" height="100%">
         <AreaChart
           width={500}
-          height={400}
+          height={300}
           data={data}
           margin={{
             top: 10,
@@ -23,7 +27,8 @@ const AreaChartComponent = ({data}) => {
           <Area type="monotone" dataKey="revenue" stackId="1" stroke="#B6FFCE" fill="#B6FFCE" />
         </AreaChart>
       </div>
-    );
+    </div>
+  );
 };
 
 export default AreaChartComponent;

@@ -14,8 +14,7 @@ const Dashboard = () => {
     },[])
     return (
         <div>
-            <h4>Dashboard</h4>
-            <div>
+            <div className=' w-4/5 mx-auto grid sm:grid-cols-2 gap-6  mt-10'>
                  <LineChartComponent data={chartData}></LineChartComponent>
                  <AreaChartComponent data={chartData}></AreaChartComponent>
                  <BarChartComponent data={chartData}></BarChartComponent>

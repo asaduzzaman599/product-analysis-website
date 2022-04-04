@@ -1,9 +1,12 @@
 import React from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
-const BarChartComponent = ({data}) => {
-    return (
-        <div width="100%" height="100%">
+const BarChartComponent = ({ data }) => {
+  return (
+    <div>
+      <h3 className='text-2xl font-semibold mb-4 text-blue-600'> Investment vs Revenue </h3>
+
+      <div width="100%" height="100%">
         <BarChart
           width={500}
           height={300}
@@ -24,7 +27,8 @@ const BarChartComponent = ({data}) => {
           <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
         </BarChart>
       </div>
-    );
+    </div>
+  );
 };
 
 export default BarChartComponent;
