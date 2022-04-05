@@ -28,7 +28,7 @@ const Home = () => {
                     reviews.map(review=><Review review={review} key={review.id}></Review>)
                 }
             </div>
-            <button className='py-2 px-4 bg-blue-900 text-blue-200 mt-4 rounded' onClick={()=>navigate('/reviews')}>See More Reviw</button>
+            <button className='py-2 px-4 bg-blue-900 text-blue-200 mt-4 rounded' onClick={()=>navigate('/reviews')}>See More Review</button>
         </div>
     );
 };

@@ -5,20 +5,20 @@ import LineChartComponent from '../LineChartComponent/LineChartComponent';
 import PieChartComponent from '../PieChartComponent/PieChartComponent';
 
 const Dashboard = () => {
-    const [chartData,setChartData] = useState([]);
+    const [chartData, setChartData] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('fakedata/data.json')
-        .then(res=> res.json())
-        .then(data=> setChartData(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setChartData(data))
+    }, [])
     return (
         <div>
             <div className=' w-4/5 mx-auto grid sm:grid-cols-2 gap-6  mt-10'>
-                 <LineChartComponent data={chartData}></LineChartComponent>
-                 <AreaChartComponent data={chartData}></AreaChartComponent>
-                 <BarChartComponent data={chartData}></BarChartComponent>
-                 <PieChartComponent data={chartData}></PieChartComponent>
+                <LineChartComponent data={chartData}></LineChartComponent>
+                <AreaChartComponent data={chartData}></AreaChartComponent>
+                <BarChartComponent data={chartData}></BarChartComponent>
+                <PieChartComponent data={chartData}></PieChartComponent >
 
             </div>
         </div>

@@ -4,12 +4,10 @@ import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, X
 const LineChartComponent = ({ data }) => {
   console.log(data)
   return (
-    <div>
+    <div className=''>
       <h3 className='text-2xl font-semibold mb-4 text-blue-600'> MONTH WISE SEll</h3>
-      <div width="100%" height="100%" >
+      <ResponsiveContainer  className='mx-auto' width="90%" height={300}>
         <LineChart
-          width={300}
-          height={300}
           className="mx-auto"
           data={data}
           margin={{
@@ -27,7 +25,7 @@ const LineChartComponent = ({ data }) => {
           <Line type="monotone" dataKey="sell" stroke="#39AEA9" activeDot={{ r: 8 }} />
           {/*  <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
         </LineChart>
-      </div>
+      </ResponsiveContainer>
     </div>
   );
 };
