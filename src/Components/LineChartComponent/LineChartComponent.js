@@ -2,7 +2,6 @@ import React from 'react';
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const LineChartComponent = ({ data }) => {
-  console.log(data)
   return (
     <div className=''>
       <h3 className='text-2xl font-semibold mb-4 text-blue-600'> MONTH WISE SEll</h3>

@@ -7,7 +7,6 @@ const Home = () => {
     const [allReviews,setReviews] = useReviews()
     const navigate = useNavigate();
     const reviews = allReviews.slice(0,3);
-    console.log(reviews)
     return (
         <div className='mt-10'>
             
