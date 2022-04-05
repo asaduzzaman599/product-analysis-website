@@ -3,14 +3,14 @@
         "id":1,
         "name":"Mr John ",
         "image":"https://img.freepik.com/free-photo/image-serious-black-man-strongly-disagree-showing-cross-sign-stop-prohibit-something-standing-red-background_1258-73621.jpg?w=740&t=st=1649016944~exp=1649017544~hmac=db6704adf380352232bebfc965b1a993b1730ca725c70f5f32d87970a55fa03b",
-        "body":"Great Product. Great facilities. i will recommand this thing to every one",
+        "body":"Great Product. Great facilities. i will recommand this thing to everyone.",
         "rating":4.5
     },
     {
         "id":2,
         "name":"Devid Miller ",
         "image":"https://img.freepik.com/free-photo/image-happy-engineer-holds-mobile-phone-sends-text-messages-colleagues-wears-orange-helmet-elegant-suit_273609-31214.jpg?t=st=1649018860~exp=1649019460~hmac=3cddc96e4aea0777d26496f78d17def6ec428c0a54422aa71f963f5fd57e6a46&w=740",
-        "body":"This Product is amayzing. Very comfortable and ligh wight. No problem with vision.",
+        "body":"This Product is just amayzing. Very comfortable and very light wight. No problem with vision.",
         "rating":5
     },
     {
@@ -24,21 +24,21 @@
         "id":4,
         "name":"Emma Watson ",
         "image":"https://img.freepik.com/free-photo/image-beautiful-adult-asian-woman-showing-thumbs-up-wearing-formal-office-university-clothing-recommending-company-standing-white-background_1258-89325.jpg?w=740",
-        "body":"I am very setisfied with this glass. all over good and their service also very good like  premium.",
+        "body":"I am very satisfied with this glass. all over good and their service also very good like  premium.",
         "rating":4.8
     },
     {
         "id":5,
         "name":"Smith Wood ",
         "image":"https://img.freepik.com/free-photo/image-handsome-caucasian-man-party-suit-smiling-pleased-attend-formal-event-standing-white-background_1258-64650.jpg?w=740",
-        "body":"It's more then my expectations. I will suggested all of my friend and family. Also i already another product",
+        "body":"It's more then my expectations. I will suggested all of my friend and family. Also i already ordered another product",
         "rating":4.5
     },
     {
         "id":6,
         "name":"Andy Mari",
         "image":"https://img.freepik.com/free-photo/image-impressed-african-american-business-lady-holds-paper-cup-smartphone_273609-43336.jpg?w=740",
-        "body":"Overated product. Average. i will not recommand any one. But i am giving 3 because of after sell service.",
+        "body":"Overated product. Average. i will not recommand to any one this product. But i am giving 3 because of after sell service.",
         "rating":3
     }
 ]

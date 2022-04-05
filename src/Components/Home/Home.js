@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
                 <div className='order-1 my-20'>
                     <h1 className='text-5xl font-medium text-cyan-900'>We are commited to Provide Best Sunglass to Our Customer! </h1>
-                    <p className='text-gray-500 text-2xl my-8'>Our main priority is customers comfort, safety and their trust.</p>
+                    <p className='text-gray-500 text-2xl my-8'>Our main priority is customers comfort, safety and customers trust.</p>
                     <button className='py-4 px-8 rounded font-medium  text-blue-900 bg-blue-200'>Live Demo</button>
                 </div>
                
@@ -28,7 +28,7 @@ const Home = () => {
                     reviews.map(review=><Review review={review} key={review.id}></Review>)
                 }
             </div>
-            <button className='py-2 px-4 bg-blue-900 text-blue-200 mt-4 rounded' onClick={()=>navigate('/reviews')}>See More Review</button>
+            <button className='py-2 px-4 bg-blue-900 text-blue-200 mt-4 rounded' onClick={()=>navigate('/reviews')}>See All Reviews</button>
         </div>
     );
 };

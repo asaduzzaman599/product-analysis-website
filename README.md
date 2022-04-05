@@ -8,7 +8,7 @@
 
 ## About This Project:
 
-- Header with responsive nav bar.
-- Navigate One page to another page with navbar by router.
-- Discribe Sell, Invesment and Revenue information with various chart. 
-- Some Basic FAQ in Blog Section.
+- Header with responsive navbar to navigate One page to another page by react router.
+- Product Reviews with react rating and  card responsive also
+- Discribe Sell, Invesment and Revenue information with various chart in dashboard . 
+- Some Basic FAQ in Blog Section and Contact information section.
