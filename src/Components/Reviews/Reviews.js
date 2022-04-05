@@ -3,6 +3,7 @@ import { useReviews } from '../../hook/useReviews';
 import Review from '../Review/Review';
 
 const Reviews = () => {
+    //customs hook
     const [reviews,setReviews] = useReviews();
     return (
         <div className='mt-16'>

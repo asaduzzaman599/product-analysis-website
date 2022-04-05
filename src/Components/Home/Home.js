@@ -4,6 +4,7 @@ import { useReviews } from '../../hook/useReviews';
 import Review from '../Review/Review';
 
 const Home = () => {
+    //customs hook
     const [allReviews,setReviews] = useReviews()
     const navigate = useNavigate();
     const reviews = allReviews.slice(0,3);
